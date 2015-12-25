@@ -15,6 +15,7 @@
 		7FD464EE1C2DE40F0073EC11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464EC1C2DE40F0073EC11 /* Main.storyboard */; };
 		7FD464F01C2DE40F0073EC11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464EF1C2DE40F0073EC11 /* Assets.xcassets */; };
 		7FD464F31C2DE40F0073EC11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464F11C2DE40F0073EC11 /* LaunchScreen.storyboard */; };
+		7FD464FC1C2DE9F40073EC11 /* SpriteSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		7FD464EF1C2DE40F0073EC11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD464F21C2DE40F0073EC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD464F41C2DE40F0073EC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD464FA1C2DE9F40073EC11 /* SpriteSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteSheet.h; sourceTree = "<group>"; };
+		7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				7FD464E21C2DE40F0073EC11 /* AppDelegate.m */,
 				7FD464E41C2DE40F0073EC11 /* GameScene.h */,
 				7FD464E51C2DE40F0073EC11 /* GameScene.m */,
+				7FD464FA1C2DE9F40073EC11 /* SpriteSheet.h */,
+				7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */,
 				7FD464E71C2DE40F0073EC11 /* GameScene.sks */,
 				7FD464E91C2DE40F0073EC11 /* GameViewController.h */,
 				7FD464EA1C2DE40F0073EC11 /* GameViewController.m */,
@@ -161,6 +166,7 @@
 				7FD464EB1C2DE40F0073EC11 /* GameViewController.m in Sources */,
 				7FD464E31C2DE40F0073EC11 /* AppDelegate.m in Sources */,
 				7FD464E61C2DE40F0073EC11 /* GameScene.m in Sources */,
+				7FD464FC1C2DE9F40073EC11 /* SpriteSheet.m in Sources */,
 				7FD464E01C2DE40F0073EC11 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

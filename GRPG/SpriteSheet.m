@@ -1,0 +1,67 @@
+//
+//  SpriteSheet.m
+//  GRPG
+//
+//  Created by Jared Halpern on 12/25/15.
+//  Copyright © 2015 Jared Halpern. All rights reserved.
+//
+
+#import "SpriteSheet.h"
+
+@interface SpriteSheet ()
+@property (nonatomic, strong) SKTexture *texture;
+@property (nonatomic)         NSInteger rows;
+@property (nonatomic)         NSInteger cols;
+@property (nonatomic)         CGFloat   margin;
+@property (nonatomic)         CGFloat   spacing;
+@property (nonatomic, getter=frameSize)         CGSize    frameSize;
+@end
+
+
+@implementation SpriteSheet
+
+- (instancetype)initWithTexture:(SKTexture *)texture rows:(NSInteger)rows cols:(NSInteger)cols {
+  return [self initWithTexture:texture rows:rows cols:cols margin:0 spacing:0];
+}
+
+- (instancetype)initWithTexture:(SKTexture *)texture rows:(NSInteger)rows cols:(NSInteger)cols margin:(CGFloat)margin spacing:(CGFloat)spacing {
+  if (self == [super init]) {
+    _texture = texture;
+    _rows = rows;
+    _cols = cols;
+    _margin = margin;
+    _spacing = spacing;
+    _frameSize = [self frameSize];
+    
+  }
+  return self;
+}
+
+- (CGSize)frameSize {
+  return CGSizeMake((self.texture.size.width - (self.margin * 2 + self.spacing * ((CGFloat)self.cols - 1))) / ((CGFloat)self.cols),
+                    (self.texture.size.height - (self.margin * 2 + self.spacing * ((CGFloat)self.rows - 1)) / ((CGFloat)self.rows)));
+}
+
+
+/*
+ 
+ func textureForColumn(column: Int, row: Int)->SKTexture? {
+ if !(0...self.rows ~= row && 0...self.columns ~= column) {
+ //location is out of bounds
+ return nil
+ }
+ 
+ var textureRect=CGRect(x: self.margin+CGFloat(column)*(self.frameSize.width+self.spacing)-self.spacing,
+ y: self.margin+CGFloat(row)*(self.frameSize.width+self.spacing)-self.spacing,
+ width: self.frameSize.width,
+ height: self.frameSize.height)
+ 
+ textureRect=CGRect(x: textureRect.origin.x/self.texture.size().width, y: textureRect.origin.y/self.texture.size().height,
+ width: textureRect.size.width/self.texture.size().width, height: textureRect.size.height/self.texture.size().height)
+ return SKTexture(rect: textureRect, inTexture: self.texture)
+ }
+ 
+ }
+ */
+
+@end
