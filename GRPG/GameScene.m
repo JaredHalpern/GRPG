@@ -12,8 +12,6 @@
 
 -(void)didMoveToView:(SKView *)view {
   
-  SKSpriteNode
-  
   
 }
 

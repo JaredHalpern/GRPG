@@ -20,6 +20,11 @@
 
 @implementation SpriteSheet
 
+- (instancetype)initWithTextureName:(NSString *)name rows:(NSInteger)rows cols:(NSInteger)cols {
+  SKTexture *texture = [SKTexture textureWithImageNamed:name];
+  return [self initWithTexture:texture rows:rows cols:cols];
+}
+
 - (instancetype)initWithTexture:(SKTexture *)texture rows:(NSInteger)rows cols:(NSInteger)cols {
   return [self initWithTexture:texture rows:rows cols:cols margin:0 spacing:0];
 }
@@ -42,6 +47,22 @@
                     (self.texture.size.height - (self.margin * 2 + self.spacing * ((CGFloat)self.rows - 1)) / ((CGFloat)self.rows)));
 }
 
+- (SKTexture *)textureForColumn:(NSInteger)column andRow:(NSInteger)row {
+  
+  if (column >= (self.cols) || row >= (self.rows)) {
+    NSLog(@"Asking for row or col greater than spritesheet");
+    return nil;
+  }
+
+  CGRect textureRect = CGRectMake(self.margin + (column * self.frameSize.width + self.spacing) - self.spacing,
+                                  self.margin + (row * self.frameSize.height + self.spacing) - self.spacing,
+                                  self.frameSize.width,
+                                  self.frameSize.height);
+  
+  textureRect = CGRectMake(textureRect.origin.x / self.texture.size.width, textureRect.origin.y / self.texture.size.height, textureRect.size.width / self.texture.size.width, textureRect.size.height/self.texture.size.height);
+  
+  return [SKTexture textureWithRect:textureRect inTexture:self.texture];
+}
 
 /*
  
