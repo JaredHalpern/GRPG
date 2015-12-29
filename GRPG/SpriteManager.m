@@ -7,6 +7,7 @@
 //
 
 #import "SpriteManager.h"
+#import "SpriteSheet.h"
 
 @interface SpriteManager ()
 
@@ -43,7 +44,24 @@
   return nil;
 }
 
-- (NSArray *)framesWithAtlasName:(NSString *)textureAtlasName {
+- (NSArray *)framesWithTextureName:(NSString *)textureName {
+  
+  // note - this isn't caching for reuse
+  
+  SpriteSheet *spriteSheet = [[SpriteSheet alloc] initWithTextureName:textureName rows:3 cols:3 margin:0.0 spacing:8.0];
+  NSMutableArray *animFrames = [@[] mutableCopy];
+  
+  // loads from bottom left of sprite sheet, left to right
+  for (NSInteger i = 0; i < 3; i++) {
+    for (NSInteger j = 0; j < 3; j++) {
+      [animFrames addObject:[spriteSheet textureForColumn:j andRow:i]];
+    }
+  }
+//  NSLog(@"%s - added these frames to array: %@", __PRETTY_FUNCTION__, animFrames);
+  return animFrames;
+}
+
+- (NSMutableArray *)framesPrefix:(NSString *)framesPrefix withAtlasName:(NSString *)textureAtlasName {
   
   SKTextureAtlas *textureAtlas = nil;
   NSMutableArray *animFrames = [@[] mutableCopy];
@@ -64,13 +82,13 @@
   
   // Note -- Naming: sprites inside atlas must be named the same as the atlas itself, with their frame # at the end.
   // eg: <object type>_<size>_<description>_<version>_<frame #>
-  
+
   for (int i = 0; i < textureAtlas.textureNames.count; i++) {
     NSString *textureName = [NSString stringWithFormat:@"%@_%d", textureAtlasName, i];
     SKTexture *texture = [textureAtlas textureNamed:textureName];
     [animFrames addObject:texture];
   }
-  
+   
   // set the texture atlast name key for the animation frames, so we can retrieve them (cache for later)
   [self.atlasFramesDictionary setObject:animFrames forKey:textureAtlasName];
   

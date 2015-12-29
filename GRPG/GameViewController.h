@@ -11,4 +11,6 @@
 
 @interface GameViewController : UIViewController
 
+@property (nonatomic, strong) SKView            *skView;
+
 @end

@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1C39621C32360800905335 /* doghat.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C39611C32360800905335 /* doghat.atlasc */; };
+		7FD0F30D1C2F5CBB00B6816C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0F30C1C2F5CBB00B6816C /* Assets.xcassets */; };
 		7FD464E01C2DE40F0073EC11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464DF1C2DE40F0073EC11 /* main.m */; };
 		7FD464E31C2DE40F0073EC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464E21C2DE40F0073EC11 /* AppDelegate.m */; };
 		7FD464E61C2DE40F0073EC11 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464E51C2DE40F0073EC11 /* GameScene.m */; };
 		7FD464E81C2DE40F0073EC11 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464E71C2DE40F0073EC11 /* GameScene.sks */; };
 		7FD464EB1C2DE40F0073EC11 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464EA1C2DE40F0073EC11 /* GameViewController.m */; };
 		7FD464EE1C2DE40F0073EC11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464EC1C2DE40F0073EC11 /* Main.storyboard */; };
-		7FD464F01C2DE40F0073EC11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464EF1C2DE40F0073EC11 /* Assets.xcassets */; };
 		7FD464F31C2DE40F0073EC11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD464F11C2DE40F0073EC11 /* LaunchScreen.storyboard */; };
 		7FD464FC1C2DE9F40073EC11 /* SpriteSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */; };
 		7FD464FF1C2E01730073EC11 /* SpriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464FE1C2E01730073EC11 /* SpriteManager.m */; };
+		7FD465021C2E06FA0073EC11 /* GRPGSKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD465011C2E06FA0073EC11 /* GRPGSKObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F1C39611C32360800905335 /* doghat.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doghat.atlasc; sourceTree = "<group>"; };
+		7FD0F30C1C2F5CBB00B6816C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD464DB1C2DE40F0073EC11 /* GRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD464DF1C2DE40F0073EC11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FD464E11C2DE40F0073EC11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,13 +34,15 @@
 		7FD464E91C2DE40F0073EC11 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		7FD464EA1C2DE40F0073EC11 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		7FD464ED1C2DE40F0073EC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7FD464EF1C2DE40F0073EC11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD464F21C2DE40F0073EC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD464F41C2DE40F0073EC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FD464FA1C2DE9F40073EC11 /* SpriteSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteSheet.h; sourceTree = "<group>"; };
 		7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteSheet.m; sourceTree = "<group>"; };
 		7FD464FD1C2E01730073EC11 /* SpriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteManager.h; sourceTree = "<group>"; };
 		7FD464FE1C2E01730073EC11 /* SpriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteManager.m; sourceTree = "<group>"; };
+		7FD465001C2E06FA0073EC11 /* GRPGSKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRPGSKObject.h; sourceTree = "<group>"; };
+		7FD465011C2E06FA0073EC11 /* GRPGSKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRPGSKObject.m; sourceTree = "<group>"; };
+		7FD465081C2E08230073EC11 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,20 +77,15 @@
 			children = (
 				7FD464E11C2DE40F0073EC11 /* AppDelegate.h */,
 				7FD464E21C2DE40F0073EC11 /* AppDelegate.m */,
-				7FD464E41C2DE40F0073EC11 /* GameScene.h */,
-				7FD464E51C2DE40F0073EC11 /* GameScene.m */,
-				7FD464FA1C2DE9F40073EC11 /* SpriteSheet.h */,
-				7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */,
-				7FD464FD1C2E01730073EC11 /* SpriteManager.h */,
-				7FD464FE1C2E01730073EC11 /* SpriteManager.m */,
-				7FD464E71C2DE40F0073EC11 /* GameScene.sks */,
-				7FD464E91C2DE40F0073EC11 /* GameViewController.h */,
-				7FD464EA1C2DE40F0073EC11 /* GameViewController.m */,
-				7FD464EC1C2DE40F0073EC11 /* Main.storyboard */,
-				7FD464EF1C2DE40F0073EC11 /* Assets.xcassets */,
-				7FD464F11C2DE40F0073EC11 /* LaunchScreen.storyboard */,
+				7FD465081C2E08230073EC11 /* Constants.h */,
 				7FD464F41C2DE40F0073EC11 /* Info.plist */,
+				7FD465041C2E07600073EC11 /* Managers */,
+				7FD465061C2E07750073EC11 /* Scenes */,
+				7FD465031C2E07560073EC11 /* SK Objects */,
+				7FD465051C2E076E0073EC11 /* View Controllers */,
+				7FD465071C2E07820073EC11 /* Storyboards */,
 				7FD464DE1C2DE40F0073EC11 /* Supporting Files */,
+				7FD0F30C1C2F5CBB00B6816C /* Assets.xcassets */,
 			);
 			path = GRPG;
 			sourceTree = "<group>";
@@ -92,9 +93,58 @@
 		7FD464DE1C2DE40F0073EC11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F1C39611C32360800905335 /* doghat.atlasc */,
 				7FD464DF1C2DE40F0073EC11 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FD465031C2E07560073EC11 /* SK Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7FD464FA1C2DE9F40073EC11 /* SpriteSheet.h */,
+				7FD464FB1C2DE9F40073EC11 /* SpriteSheet.m */,
+				7FD465001C2E06FA0073EC11 /* GRPGSKObject.h */,
+				7FD465011C2E06FA0073EC11 /* GRPGSKObject.m */,
+			);
+			name = "SK Objects";
+			sourceTree = "<group>";
+		};
+		7FD465041C2E07600073EC11 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD464FD1C2E01730073EC11 /* SpriteManager.h */,
+				7FD464FE1C2E01730073EC11 /* SpriteManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		7FD465051C2E076E0073EC11 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD464E91C2DE40F0073EC11 /* GameViewController.h */,
+				7FD464EA1C2DE40F0073EC11 /* GameViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7FD465061C2E07750073EC11 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7FD464E71C2DE40F0073EC11 /* GameScene.sks */,
+				7FD464E41C2DE40F0073EC11 /* GameScene.h */,
+				7FD464E51C2DE40F0073EC11 /* GameScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7FD465071C2E07820073EC11 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7FD464EC1C2DE40F0073EC11 /* Main.storyboard */,
+				7FD464F11C2DE40F0073EC11 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +206,9 @@
 			files = (
 				7FD464E81C2DE40F0073EC11 /* GameScene.sks in Resources */,
 				7FD464F31C2DE40F0073EC11 /* LaunchScreen.storyboard in Resources */,
-				7FD464F01C2DE40F0073EC11 /* Assets.xcassets in Resources */,
+				7FD0F30D1C2F5CBB00B6816C /* Assets.xcassets in Resources */,
 				7FD464EE1C2DE40F0073EC11 /* Main.storyboard in Resources */,
+				7F1C39621C32360800905335 /* doghat.atlasc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +223,7 @@
 				7FD464E31C2DE40F0073EC11 /* AppDelegate.m in Sources */,
 				7FD464E61C2DE40F0073EC11 /* GameScene.m in Sources */,
 				7FD464FC1C2DE9F40073EC11 /* SpriteSheet.m in Sources */,
+				7FD465021C2E06FA0073EC11 /* GRPGSKObject.m in Sources */,
 				7FD464FF1C2E01730073EC11 /* SpriteManager.m in Sources */,
 				7FD464E01C2DE40F0073EC11 /* main.m in Sources */,
 			);
@@ -285,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = GRPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytemason.GRPG;
@@ -296,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = GRPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bytemason.GRPG;
@@ -322,6 +376,7 @@
 				7FD464F91C2DE40F0073EC11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

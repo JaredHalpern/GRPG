@@ -12,7 +12,8 @@
 @interface SpriteManager : NSObject
 
 + (SpriteManager *)sharedManager;
-- (NSArray *)framesWithAtlasName:(NSString *)textureAtlasName;
+- (NSMutableArray *)framesWithTextureName:(NSString *)textureName;
+- (NSMutableArray *)framesPrefix:(NSString *)framesPrefix withAtlasName:(NSString *)textureAtlasName;
 - (SKSpriteNode *)spriteNodeOfType:(NSString *)spriteType;
 
 @end

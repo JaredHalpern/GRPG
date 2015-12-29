@@ -20,9 +20,9 @@
 
 @implementation SpriteSheet
 
-- (instancetype)initWithTextureName:(NSString *)name rows:(NSInteger)rows cols:(NSInteger)cols {
+- (instancetype)initWithTextureName:(NSString *)name rows:(NSInteger)rows cols:(NSInteger)cols margin:(CGFloat)margin spacing:(CGFloat)spacing {
   SKTexture *texture = [SKTexture textureWithImageNamed:name];
-  return [self initWithTexture:texture rows:rows cols:cols];
+  return [self initWithTexture:texture rows:rows cols:cols margin:margin spacing:spacing];
 }
 
 - (instancetype)initWithTexture:(SKTexture *)texture rows:(NSInteger)rows cols:(NSInteger)cols {
@@ -43,8 +43,11 @@
 }
 
 - (CGSize)frameSize {
-  return CGSizeMake((self.texture.size.width - (self.margin * 2 + self.spacing * ((CGFloat)self.cols - 1))) / ((CGFloat)self.cols),
-                    (self.texture.size.height - (self.margin * 2 + self.spacing * ((CGFloat)self.rows - 1)) / ((CGFloat)self.rows)));
+  
+  CGSize newSize = CGSizeMake((self.texture.size.width - (self.margin * 2.0 + self.spacing * ((CGFloat)self.cols - 1.0))) / ((CGFloat)self.cols),
+                    (self.texture.size.height - ((self.margin * 2.0) + (self.spacing * ((CGFloat)self.rows - 1.0))) / ((CGFloat)self.rows)));
+  NSLog(@"%s - frame size: %@", __PRETTY_FUNCTION__, NSStringFromCGSize(newSize));
+  return newSize;
 }
 
 - (SKTexture *)textureForColumn:(NSInteger)column andRow:(NSInteger)row {
@@ -55,7 +58,7 @@
   }
 
   CGRect textureRect = CGRectMake(self.margin + (column * self.frameSize.width + self.spacing) - self.spacing,
-                                  self.margin + (row * self.frameSize.height + self.spacing) - self.spacing,
+                                  self.margin + (row * self.frameSize.width + self.spacing) - self.spacing, // note using width here
                                   self.frameSize.width,
                                   self.frameSize.height);
   
@@ -72,17 +75,15 @@
  return nil
  }
  
- var textureRect=CGRect(x: self.margin+CGFloat(column)*(self.frameSize.width+self.spacing)-self.spacing,
- y: self.margin+CGFloat(row)*(self.frameSize.width+self.spacing)-self.spacing,
- width: self.frameSize.width,
- height: self.frameSize.height)
+ var textureRect=CGRect(x: self.margin+CGFloat(column)* (self.frameSize.width+self.spacing)-self.spacing,
+ y: self.margin+CGFloat(row)* (self.frameSize.width+self.spacing)-self.spacing,
+ width: self.frameSize.width, height: self.frameSize.height)
  
  textureRect=CGRect(x: textureRect.origin.x/self.texture.size().width, y: textureRect.origin.y/self.texture.size().height,
  width: textureRect.size.width/self.texture.size().width, height: textureRect.size.height/self.texture.size().height)
- return SKTexture(rect: textureRect, inTexture: self.texture)
- }
  
- }
+ 
+ 
  */
 
 @end
