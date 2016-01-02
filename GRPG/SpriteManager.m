@@ -84,7 +84,7 @@
   // eg: <object type>_<size>_<description>_<version>_<frame #>
 
   for (int i = 0; i < textureAtlas.textureNames.count; i++) {
-    NSString *textureName = [NSString stringWithFormat:@"%@_%d", textureAtlasName, i];
+    NSString *textureName = [NSString stringWithFormat:@"%@_%d", framesPrefix, i];
     SKTexture *texture = [textureAtlas textureNamed:textureName];
     [animFrames addObject:texture];
   }

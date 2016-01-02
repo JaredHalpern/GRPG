@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 4.0.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e7646d153f79c67e32b8b569cf441b8f:90d14fe12ea4546051a16637255d3bcb:a30ef266f88a21cba6724fdab758333d$</string>
+            <string>$TexturePacker:SmartUpdate:8f18935e2bdec38ae56907753bb3f646:90d14fe12ea4546051a16637255d3bcb:42141032882877cce52f066a603b9517$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -15,7 +15,7 @@
         <array>
             <dict>
                 <key>path</key>
-                <string>doghat.1.png</string>
+                <string>dog_hat.1.png</string>
                 <key>size</key>
                 <string>{372,46}</string>
                 <key>subimages</key>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_east_0.png</string>
+                        <string>dog_hat_0.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_east_1.png</string>
+                        <string>dog_hat_1.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_east_2.png</string>
+                        <string>dog_hat_2.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_north_0.png</string>
+                        <string>dog_hat_3.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_north_1.png</string>
+                        <string>dog_hat_4.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -106,7 +106,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_north_2.png</string>
+                        <string>dog_hat_5.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -122,7 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_south_0.png</string>
+                        <string>dog_hat_6.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -138,7 +138,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_south_1.png</string>
+                        <string>dog_hat_7.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -154,7 +154,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>dog_hat_south_2.png</string>
+                        <string>dog_hat_8.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>

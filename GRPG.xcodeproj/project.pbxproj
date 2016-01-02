@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F1C39621C32360800905335 /* doghat.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C39611C32360800905335 /* doghat.atlasc */; };
+		7F1C39681C3874FF00905335 /* dog_hat.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C39671C3874FF00905335 /* dog_hat.atlasc */; };
 		7FD0F30D1C2F5CBB00B6816C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0F30C1C2F5CBB00B6816C /* Assets.xcassets */; };
 		7FD464E01C2DE40F0073EC11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464DF1C2DE40F0073EC11 /* main.m */; };
 		7FD464E31C2DE40F0073EC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD464E21C2DE40F0073EC11 /* AppDelegate.m */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F1C39611C32360800905335 /* doghat.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doghat.atlasc; sourceTree = "<group>"; };
+		7F1C39671C3874FF00905335 /* dog_hat.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_hat.atlasc; sourceTree = "<group>"; };
 		7FD0F30C1C2F5CBB00B6816C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD464DB1C2DE40F0073EC11 /* GRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD464DF1C2DE40F0073EC11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		7FD464DE1C2DE40F0073EC11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7F1C39611C32360800905335 /* doghat.atlasc */,
+				7F1C39671C3874FF00905335 /* dog_hat.atlasc */,
 				7FD464DF1C2DE40F0073EC11 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -204,11 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1C39681C3874FF00905335 /* dog_hat.atlasc in Resources */,
 				7FD464E81C2DE40F0073EC11 /* GameScene.sks in Resources */,
 				7FD464F31C2DE40F0073EC11 /* LaunchScreen.storyboard in Resources */,
 				7FD0F30D1C2F5CBB00B6816C /* Assets.xcassets in Resources */,
 				7FD464EE1C2DE40F0073EC11 /* Main.storyboard in Resources */,
-				7F1C39621C32360800905335 /* doghat.atlasc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
